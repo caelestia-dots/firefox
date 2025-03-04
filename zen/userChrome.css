@@ -79,23 +79,23 @@ toolbar .toolbarbutton-1 {
     0% {
         opacity: 0;
         scale: 0.8;
-        translate: -10% 50%;
+        translate: -10% 15vh;
     }
 
     70% {
         scale: 1.02;
-        translate: 1% 50%;
+        translate: 1% 15vh;
     }
 
     100% {
         opacity: 1;
         scale: 1;
-        translate: 0 50%;
+        translate: 0 15vh;
     }
 }
 
 #urlbar[breakout-extend] {
-    translate: 0 50%;
+    translate: 0 15vh;
     animation: 200ms floating-urlbar-show ease-out;
 }
 
