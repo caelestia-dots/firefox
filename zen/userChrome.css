@@ -87,6 +87,11 @@ toolbar .toolbarbutton-1 {
     background: var(--c-mantle) !important;
 }
 
+/* Center url bar text when not focused */
+#urlbar:not([focused]) .urlbar-input {
+  text-align: center !important; 
+}
+
 /* Floating url bar appear animation + shift down */
 @keyframes floating-urlbar-show {
     0% {
