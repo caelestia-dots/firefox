@@ -27,6 +27,9 @@
     --zen-themed-toolbar-bg: var(--c-mantle) !important;
     --zen-main-browser-background: var(--c-mantle) !important;
     --urlbarView-highlight-color: var(--c-text) !important;
+    --in-content-primary-button-text-color: var(--c-text) !important;
+    --in-content-primary-button-background: var(--toolbarbutton-hover-background) !important;
+    --in-content-primary-button-background-hover: var(--toolbarbutton-active-background) !important;
 }
 
 tooltip {
@@ -117,7 +120,8 @@ toolbar .toolbarbutton-1 {
     animation: 200ms floating-urlbar-show ease-out;
 }
 
-/* Context menus */
+/* Blur menu popups */
+#commonDialog,
 .menupopup-arrowscrollbox {
     border: 1px solid color-mix(in srgb, var(--arrowpanel-border-color), transparent 70%) !important;
     background: color-mix(in srgb, var(--arrowpanel-background), transparent 15%) !important;
