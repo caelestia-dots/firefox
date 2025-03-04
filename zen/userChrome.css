@@ -70,6 +70,35 @@ toolbar .toolbarbutton-1 {
     }
 }
 
+#urlbar-container {
+    background: var(--c-mantle) !important;
+}
+
+/* Floating url bar appear animation + shift down */
+@keyframes floating-urlbar-show {
+    0% {
+        opacity: 0;
+        scale: 0.8;
+        translate: -10% 50%;
+    }
+
+    70% {
+        scale: 1.02;
+        translate: 1% 50%;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        translate: 0 50%;
+    }
+}
+
+#urlbar[breakout-extend] {
+    translate: 0 50%;
+    animation: 200ms floating-urlbar-show ease-out;
+}
+
 /* Context menus */
 .menupopup-arrowscrollbox {
     border: 1px solid color-mix(in srgb, var(--arrowpanel-border-color), transparent 70%) !important;
