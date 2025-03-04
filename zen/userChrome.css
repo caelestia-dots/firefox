@@ -29,6 +29,14 @@
     --urlbarView-highlight-color: var(--c-text) !important;
 }
 
+tooltip {
+    appearance: none !important;
+    background-color: var(--c-mantle) !important;
+    color: var(--c-text) !important;
+    border: 1px solid color-mix(in srgb, var(--c-accent), transparent 70%) !important;
+    border-radius: 8px !important;
+}
+
 #permissions-granted-icon {
     color: var(--c-mantle) !important;
 }
