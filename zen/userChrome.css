@@ -128,6 +128,10 @@ toolbar .toolbarbutton-1 {
     backdrop-filter: blur(25px) !important;
 }
 
+#commonDialog {
+    background: color-mix(in srgb, var(--zen-branding-bg), transparent 15%) !important;
+}
+
 /* Blur floating url bar */
 #urlbar[zen-floating-urlbar][breakout][breakout-extend] > #urlbar-background {
     border: 1px solid color-mix(in srgb, var(--zen-colors-border), transparent 70%) !important;
