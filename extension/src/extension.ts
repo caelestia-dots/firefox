@@ -28,19 +28,21 @@ interface Message {
     crust: string;
     success: string;
     error: string;
-    accent: string;
+    primary: string;
+    secondary: string;
+    tertiary: string;
 }
 
 const browserColours = (scheme: Message) => ({
     bookmark_text: scheme.text,
     button_background_hover: scheme.surface1,
     button_background_active: scheme.surface2,
-    icons: scheme.accent,
-    icons_attention: scheme.accent,
+    icons: scheme.primary,
+    icons_attention: scheme.primary,
     frame: scheme.mantle,
     frame_inactive: scheme.mantle,
     tab_text: scheme.text,
-    tab_loading: scheme.accent,
+    tab_loading: scheme.primary,
     tab_background_text: scheme.subtext0,
     tab_selected: scheme.surface0,
     tab_line: scheme.surface0,
@@ -50,7 +52,7 @@ const browserColours = (scheme: Message) => ({
     toolbar_field_border_focus: scheme.base,
     toolbar_field_text: scheme.subtext0,
     toolbar_field_text_focus: scheme.text,
-    toolbar_field_highlight: scheme.accent,
+    toolbar_field_highlight: scheme.primary,
     toolbar_field_highlight_text: scheme.base,
     toolbar_field_separator: scheme.base,
     toolbar_top_separator: scheme.mantle,
@@ -62,7 +64,7 @@ const browserColours = (scheme: Message) => ({
     popup: scheme.surface0,
     popup_border: scheme.overlay0,
     popup_text: scheme.text,
-    popup_highlight: scheme.accent,
+    popup_highlight: scheme.primary,
     popup_highlight_text: scheme.base,
     sidebar: scheme.surface0,
     sidebar_border: scheme.surface2,
